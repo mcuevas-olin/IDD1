@@ -12,20 +12,29 @@ class KmeansClustering(private val k: Int, private val data: List<DataPoint>) {
     private var centroids = mutableListOf<DataPoint>()
     private var r = MutableList(data.size) { MutableList(k) { false } }
 
-    /*
-    * runs K means clustering algorithm until either the means converge or it hits max iterations
-    * @param maxIteration
-    * */
+    /**
+     * Runs K means clustering algorithm until either the means converge or it hits max iterations.
+     * @param maxIteration Maximum number of iterations to run. If 0, it will run until convergence.
+     * @return The final assignment matrix after clustering.
+     */
     fun runKmeans(maxIteration: Int = 0): MutableList<MutableList<Boolean>> {
         initializeCentroids()
         initializeResponsibilities()
 
-        //loop assignmentStep and updateStep until means converge or it hits max iterations here
+        var iteration = 0
+        var assignmentsChanged = true
+
+        // Repeat assignment and update steps until assignments do not change or reach max iterations
+        while (assignmentsChanged && (iteration < maxIteration || maxIteration == 0)) {
+            val previousAssignments = r.map { it.toList() } // Copy current assignments
+            assignmentStep()
+            updateStep()
+            assignmentsChanged = !assignmentsConverged(previousAssignments)
+            iteration++
+        }
 
         return r
-
     }
-
 
     private fun assignmentStep() {
         // Reset all current responsibilities to false.
@@ -120,5 +129,25 @@ class KmeansClustering(private val k: Int, private val data: List<DataPoint>) {
 
     private fun initializeResponsibilities() {
         r = MutableList(data.size) { MutableList(k) { false } }
+    }
+
+    /**
+     * Checks whether the current assignments have converged.
+     * Convergence occurs when the current assignments are the same as the previous assignments.
+     * @param previousAssignments The assignments from the previous iteration.
+     * @return True if assignments have converged, false otherwise.
+     */
+    private fun assignmentsConverged(previousAssignments: List<List<Boolean>>): Boolean {
+    // Check if the current assignments are the same as the previous assignments
+        for (i in r.indices) {
+            for (j in r[i].indices) {
+                // If any assignment differs from the previous one, return false indicating assignments have not converged
+                if (r[i][j] != previousAssignments[i][j]) {
+                    return false
+                }
+            }
+        }
+        // If all assignments are the same as the previous ones, return true indicating assignments have converged
+        return true
     }
 }

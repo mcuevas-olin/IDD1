@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf446afd-0fe4-4117-9c04-e413273a5a6f" name="Changes" comment="KmeansClustering start">
+    <list default="true" id="cf446afd-0fe4-4117-9c04-e413273a5a6f" name="Changes" comment="KmeansClustering resolved bugs">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/KmeansClustering.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/KmeansClustering.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +36,8 @@
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "Gradle.Build IDD1.executor": "Run",
+    "Kotlin.MainKt.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "git-widget-placeholder": "master",
@@ -63,7 +66,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711303759376</updated>
-      <workItem from="1711303760565" duration="16457000" />
+      <workItem from="1711303760565" duration="18086000" />
     </task>
     <task id="LOCAL-00001" summary="KmeansClustering start">
       <option name="closed" value="true" />
@@ -73,7 +76,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711319351251</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="KmeansClustering resolved bugs">
+      <option name="closed" value="true" />
+      <created>1711321638355</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1711321638355</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -92,17 +103,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="KmeansClustering start" />
-    <option name="LAST_COMMIT_MESSAGE" value="KmeansClustering start" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="kotlin-line">
-          <url>file://$PROJECT_DIR$/src/main/kotlin/Main.kt</url>
-          <line>13</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="KmeansClustering resolved bugs" />
+    <option name="LAST_COMMIT_MESSAGE" value="KmeansClustering resolved bugs" />
   </component>
 </project>
