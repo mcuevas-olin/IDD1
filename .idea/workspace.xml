@@ -4,8 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="cf446afd-0fe4-4117-9c04-e413273a5a6f" name="Changes" comment="KmeansClustering resolved bugs">
+    <list default="true" id="cf446afd-0fe4-4117-9c04-e413273a5a6f" name="Changes" comment="K means algorithm done">
+      <change afterPath="$PROJECT_DIR$/src/test/kotlin/KmeansClusteringTest.kt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/kotlin/Deliverable.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Deliverable.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/KmeansClustering.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/KmeansClustering.kt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/kotlin/Main.kt" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/kotlin/Main.kt" afterDir="false" />
     </list>
@@ -19,38 +22,53 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Kotlin Class" />
+      </list>
+    </option>
+  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo"><![CDATA[{
-  "associatedIndex": 0
-}]]></component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 0
+}</component>
   <component name="ProjectId" id="2e953d6W9HG6EpZDfy0pXXslau5" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Build IDD1.executor": "Run",
-    "Kotlin.MainKt.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "master",
-    "kotlin-language-version-configured": "true",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "onboarding.tips.debug.path": "C:/Users/mcuevas/Documents/DSA/IDD1/src/main/kotlin/Main.kt",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Downloaded.Files.Path.Enabled&quot;: &quot;false&quot;,
+    &quot;Gradle.Build IDD1.executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.KmeansClusteringTest.executor&quot;: &quot;Run&quot;,
+    &quot;Kotlin.MainKt.executor&quot;: &quot;Run&quot;,
+    &quot;Repository.Attach.Annotations&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.JavaDocs&quot;: &quot;false&quot;,
+    &quot;Repository.Attach.Sources&quot;: &quot;false&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;onboarding.tips.debug.path&quot;: &quot;C:/Users/mcuevas/Documents/DSA/IDD1/src/main/kotlin/Main.kt&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SharedIndexes">
     <attachedChunks>
       <set>
@@ -66,7 +84,10 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1711303759376</updated>
-      <workItem from="1711303760565" duration="18086000" />
+      <workItem from="1711303760565" duration="39394000" />
+      <workItem from="1713908090730" duration="52000" />
+      <workItem from="1714764661777" duration="1417000" />
+      <workItem from="1714874308496" duration="6060000" />
     </task>
     <task id="LOCAL-00001" summary="KmeansClustering start">
       <option name="closed" value="true" />
@@ -84,7 +105,15 @@
       <option name="project" value="LOCAL" />
       <updated>1711321638355</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="K means algorithm done">
+      <option name="closed" value="true" />
+      <created>1711327731958</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1711327731958</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -104,6 +133,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="KmeansClustering start" />
     <MESSAGE value="KmeansClustering resolved bugs" />
-    <option name="LAST_COMMIT_MESSAGE" value="KmeansClustering resolved bugs" />
+    <MESSAGE value="K means algorithm done" />
+    <option name="LAST_COMMIT_MESSAGE" value="K means algorithm done" />
   </component>
 </project>
